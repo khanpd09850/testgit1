@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Diện Tích</title>
+    <script>
+        function chuyenDoiDienTich() {
+            // Nhập giá trị diện tích từ bàn phím
+            let m2 = parseFloat(prompt("Nhập diện tích (m2):"));
+
+            // Kiểm tra giá trị nhập vào
+            if (isNaN(m2) || m2 < 0) {
+                alert("Vui lòng nhập số hợp lệ và không âm.");
+                return;
+            }
+
+            // Chuyển đổi
+            let sao = m2 / 360; // 1 sào = 360 m2
+            let mau = sao / 10; // 1 mẫu = 10 sào
+            let ha = m2 / 10000; // 1 ha = 10,000 m2
+
+            // Hiển thị kết quả
+            alert(m2 + " m2 = " + sao.toFixed(2) + " sào = " + mau.toFixed(2) + " mẫu = " + ha.toFixed(2) + " ha");
+        }
+    </script>
+</head>
+<body>
+    <h1>Chuyển Đổi Diện Tích</h1>
+    <button onclick="chuyenDoiDienTich()">Chuyển Đổi</button>
+</body>
+</html>
