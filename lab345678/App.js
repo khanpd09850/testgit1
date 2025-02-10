@@ -1,8 +1,10 @@
-import react from "react";
+import React from 'react';
+import ViewComponent from './lab3';
+import ViewComponent from './lab4';
 
-import Lab3 from "./lab3";
+
 const App = () => {
-  return <Lab3></Lab3>;
+  return <ViewComponent />;
 };
 
 export default App;
