@@ -1,7 +1,7 @@
-import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
+import { useFonts } from "expo-font";
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 const Lab51 = () => {
   let [fontsLoaded] = useFonts({
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "skyblue",
   },
   text: {
     fontFamily: "Shafarik",

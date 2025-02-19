@@ -9,6 +9,7 @@ import LoginScreen from './lab4/login';
 import Lab5 from './lab5/index';
 import Lab51 from './lab5.1/indexx';
 import Lab53 from './lab53/indexxx';
+import Lab61 from './lab61/lab61.js';
 
 
 
@@ -24,6 +25,7 @@ function HomeScreen({ navigation }) {
       <Button title="Đi tới Lab5" onPress={() => navigation.navigate('index')} />
       <Button title="Đi tới Lab51" onPress={() => navigation.navigate('indexx')} />
       <Button title="Đi tới Lab53" onPress={() => navigation.navigate('indexxx')} />
+      <Button title="Đi tới Lab61" onPress={() => navigation.navigate('lab61')} />
 
 
     </View>
@@ -45,6 +47,7 @@ export default function App() {
         <Stack.Screen name="index" component={Lab5} options={{ title: 'Lab5' }} />
         <Stack.Screen name="indexx" component={Lab51} options={{ title: 'Lab51' }} />
         <Stack.Screen name="indexxx" component={Lab53} options={{ title: 'Lab53' }} />
+        <Stack.Screen name="lab61" component={Lab61} options={{ title: 'Lab61' }} />
 
       </Stack.Navigator>
     </NavigationContainer>
